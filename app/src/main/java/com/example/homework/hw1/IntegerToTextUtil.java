@@ -1,7 +1,7 @@
-package com.example.homework;
+package com.example.homework.hw1;
 
 
-public class IntegerToGrade {
+public class IntegerToTextUtil {
 
     public static String constructString(int intNumber) {
         String millions = getStringFor3DigitInt(intNumber / 1_000_000, "million ");

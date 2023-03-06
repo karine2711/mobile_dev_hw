@@ -1,4 +1,4 @@
-package com.example.homework
+package com.example.homework.hw1
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -22,18 +22,16 @@ class DigitToStringCalculator : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonFirst.setOnClickListener {
-            val digitStr = binding.number.text.toString();
+            val digitStr = binding.number.text.toString()
             if (digitStr.length > 6) {
                 showAlertBox("Number is bigger than 999999!")
                 return@setOnClickListener
@@ -42,7 +40,7 @@ class DigitToStringCalculator : Fragment() {
             if (number < 0) {
                 showAlertBox("Number is negative!")
             }
-            val answer = IntegerToGrade.constructString(number)
+            val answer = IntegerToTextUtil.constructString(number)
             binding.answerTextbox.text = answer
         }
     }
@@ -51,7 +49,7 @@ class DigitToStringCalculator : Fragment() {
         val alertDialogBuilder: AlertDialog.Builder = AlertDialog.Builder(
             context
         )
-        alertDialogBuilder.setTitle("Invalid number");
+        alertDialogBuilder.setTitle("Invalid number")
         alertDialogBuilder
             .setMessage(msg)
             .setCancelable(true)

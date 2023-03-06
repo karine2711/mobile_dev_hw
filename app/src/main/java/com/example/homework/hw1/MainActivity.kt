@@ -1,18 +1,17 @@
-package com.example.homework
+package com.example.homework.hw1
+
 
 import android.os.Bundle
-import android.util.Log
-import com.google.android.material.snackbar.Snackbar
+import android.view.Menu
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
-import android.view.Menu
-import android.view.MenuItem
+import com.example.homework.R
 import com.example.homework.databinding.ActivityMainBinding
-import com.example.homework.databinding.ContentMainBinding
-import com.example.homework.databinding.FragmentFirstBinding
+
 
 class MainActivity : AppCompatActivity() {
 

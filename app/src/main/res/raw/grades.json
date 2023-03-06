@@ -1,0 +1,41 @@
+{
+  "homeworks": [
+    {
+      "name": "Homework 1",
+      "grade": 100,
+      "weight": 20
+    },
+    {
+      "name": "Homework 2",
+      "grade": 85,
+      "weight": 20
+    }
+  ],
+  "otherAssignments": [
+    {
+      "name": "Midterm 1",
+      "grade": 100,
+      "weight": 10
+    },
+    {
+      "name": "Midterm 2",
+      "grade": 100,
+      "weight": 20
+    },
+    {
+      "name": "Participation and attendance",
+      "grade": 100,
+      "weight": 10
+    },
+    {
+      "name": "Final Project",
+      "grade": 100,
+      "weight": 30
+    },
+    {
+      "name": "Group Presentation",
+      "grade": 100,
+      "weight": 10
+    }
+  ]
+}
